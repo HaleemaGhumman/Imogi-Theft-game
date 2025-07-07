@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Emoji Thief Game 🥷</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Emoji Game</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <h1>🥷 Emoji Thief Game</h1>
-  <div class="score">Score: <span id="score">0</span></div>
-  <p>Click the 🥷 emoji before it disappears!</p>
-  <div class="game-area" id="gameArea"></div>
+  <h1>Emoji Click Game</h1>
+  <div class="score">Score: 0</div>
+  <div class="game-area"></div>
+  <div id="game-over" class="game-over">
+  <h2>Game Over!</h2>
+  <p id="final-score">Your Score: 0</p>
+  <p id="final-high-score">High Score: 0</p>
+  <button onclick="restartGame()">Play Again</button>
+</div>
 
   <script src="main.js"></script>
 </body>
